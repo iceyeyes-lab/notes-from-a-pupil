@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "大玉トマト（麗夏）の水耕栽培記録"
 date: 2025-07-22 12:00:00 +0900
 tags: blog
