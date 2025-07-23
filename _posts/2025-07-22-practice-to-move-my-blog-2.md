@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "GitHubにブログを引っ越しさせるための練習②"
 date: 2025-07-22 11:40:00 +0900
 tags: markdown, github, blog
