@@ -1,26 +1,44 @@
-$brand-color: #4a5c82 !default; /* メインカラー（淡い紺） */
-$text-color: #333 !default;
-$background-color: #f9f9fb !default;
-$link-color: #4a5c82 !default;
+/* === カスタムカラー設定 === */
+$primary-color: #2c3e50;   // 濃いめの紺
+$background-color: #f8f9fa; // 背景を淡いグレー
+$text-color: #333;          // 本文の文字色
 
+/* サイト全体の背景 */
 body {
   background-color: $background-color;
   color: $text-color;
-  }
+}
 
-.masthead, .page__footer {
-  background-color: $brand-color;
-  color: #fff;
-  }
-
-.masthead__menu-item a {
+/* ヘッダー */
+.masthead {
+  background-color: $primary-color !important;
   color: #fff !important;
-  }
+}
 
-.masthead__menu-item a:hover {
-  color: #dfe6f2 !important;
-  }
+/* ナビゲーションリンク */
+.masthead a {
+  color: #ffffff !important;
+}
+.masthead a:hover {
+  color: #d1ecf1 !important;
+}
 
+/* 記事タイトル */
+.page__title,
+.entry-title {
+  color: $primary-color;
+}
+
+/* フッター */
+.page__footer {
+  background-color: $primary-color !important;
+  color: #ffffff !important;
+}
+
+/* リンク全般 */
 a {
-  color: $link-color;
-  }
+  color: $primary-color;
+}
+a:hover {
+  color: darken($primary-color, 10%);
+}
