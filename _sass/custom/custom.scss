@@ -1,13 +1,25 @@
-/* === 配色を引っ越し元ブログに寄せる === */
+/* === カラー設定 === */
 $primary-color: #2c3e66;    // 濃いめの紺
 $background-color: #E0EAF9; // 淡いブルーグレー
-$text-color: #333;          // 本文
+$text-color: #333;          // 本文の文字色
 
+/* === 全体スタイル === */
 body {
   background-color: $background-color !important;
   color: $text-color !important;
-  font-family: 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: 'Helvetica Neue', 'Hiragino Sans', 'Yu Gothic UI', 'Meiryo', sans-serif !important;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  font-size: 16px;
   line-height: 1.7;
+}
+
+/* === 見出し === */
+h1, h2, h3, h4, h5, h6 {
+  color: $primary-color !important;
+  font-family: 'Helvetica Neue', 'Hiragino Sans', 'Yu Gothic UI', 'Meiryo', sans-serif !important;
+  font-weight: 600;
+  letter-spacing: 0.02em;
 }
 
 /* === ヘッダー調整 === */
@@ -17,18 +29,15 @@ body {
   background-color: $primary-color !important;
   color: #fff !important;
 }
-
 .greedy-nav a,
 .greedy-nav .visible-links > li > a {
   color: #fff !important;
 }
-
 .greedy-nav a:hover {
   color: lighten($primary-color, 30%) !important;
 }
 
-/* === ページ背景を強制的に淡いブルーグレーに === */
-body,
+/* === ページ全体背景 === */
 .page,
 .page__inner-wrap,
 .page__content {
@@ -36,56 +45,39 @@ body,
   color: $text-color !important;
 }
 
-/* 記事エリアやカードの背景 */
-.page,
-.page__content,
-.archive__item,
-.page__inner-wrap {
-  background-color: #E0EAF9 !important;
-}
-/* 記事タイトル背景を変更 */
-.page__title,
-.entry-title,
-.page__meta,
-.archive__item-title {
-  background-color: transparent !important; /* 背景を透明化 */
-  color: $primary-color !important; /* タイトル文字色 */
+/* === 記事本文 === */
+.page__content {
+  background-color: lighten($background-color, 4%) !important;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
-/* 記事カードやアーカイブの背景 */
-.archive__item {
-  background-color: $background-color !important;
-  box-shadow: none !important; /* 白いボックス影を無効化 */
+/* 記事本文内リンク */
+.page__content a {
+  color: $primary-color;
+  text-decoration: underline;
+}
+.page__content a:hover {
+  color: darken($primary-color, 10%);
+  text-decoration: none;
 }
 
-/* 記事本文 */
-.page__content p {
-  color: #333 !important;
+/* 引用ブロック */
+.page__content blockquote {
+  border-left: 4px solid $primary-color;
+  background: lighten($background-color, 8%);
+  padding: 0.5rem 1rem;
+  font-style: italic;
 }
 
-/* 見出し */
-h1, h2, h3, h4, h5, h6 {
-  color: $primary-color !important;
-  font-weight: 600;
-}
-
-/* フッター */
+/* === フッター === */
 .page__footer {
   background-color: $primary-color !important;
   color: #f0f0f0 !important;
 }
 
-/* リンク */
-a {
-  color: $primary-color;
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-a:hover {
-  color: lighten($primary-color, 15%);
-}
-
-/* ボタン */
+/* === ボタン === */
 .btn, .btn--primary {
   background-color: $primary-color;
   border-color: $primary-color;
@@ -96,8 +88,8 @@ a:hover {
   border-color: darken($primary-color, 10%);
 }
 
-/* プロフィール画像 */
+/* === プロフィール画像 === */
 .author__avatar img {
   border-radius: 50%;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
