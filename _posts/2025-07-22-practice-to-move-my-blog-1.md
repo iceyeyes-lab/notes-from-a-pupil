@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "GitHubにブログを引っ越しさせるための練習①"
 date: 2025-07-22 11:20:00 +0900
 categories: blog
