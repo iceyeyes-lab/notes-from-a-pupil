@@ -22,6 +22,25 @@ body {
   color: lighten($primary-color, 30%) !important;
 }
 
+/* ページ全体の背景 */
+body {
+  background-color: #f8f9fb !important;
+  color: #333;
+}
+
+/* 記事エリアやカードの背景 */
+.page,
+.page__content,
+.archive__item,
+.page__inner-wrap {
+  background-color: #f8f9fb !important;
+}
+
+/* 記事本文 */
+.page__content p {
+  color: #333 !important;
+}
+
 /* 見出し */
 h1, h2, h3, h4, h5, h6 {
   color: $primary-color !important;
