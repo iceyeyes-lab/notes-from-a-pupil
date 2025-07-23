@@ -22,13 +22,14 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.02em;
 }
 
-/* === ヘッダー調整 === */
+/* === ヘッダー === */
 .masthead,
 .masthead__inner-wrap,
 .greedy-nav {
   background-color: $primary-color !important;
   color: #fff !important;
 }
+
 .greedy-nav a,
 .greedy-nav .visible-links > li > a {
   color: #fff !important;
@@ -45,34 +46,37 @@ h1, h2, h3, h4, h5, h6 {
   color: $text-color !important;
 }
 
-/* === 記事本文 === */
-.page__content {
+/* === 記事ページ対応 === */
+.layout--single main,
+.layout--single .page,
+.layout--single .page__inner-wrap,
+.layout--single .page__content,
+.layout--single article {
+  background-color: $background-color !important;
+  color: $text-color !important;
+}
+
+/* 記事本文ボックス */
+.layout--single .page__content {
   background-color: lighten($background-color, 4%) !important;
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
+/* 記事タイトル */
+.layout--single .page__title {
+  color: $primary-color !important;
+}
+
 /* 記事本文内リンク */
-.page__content a {
+.layout--single .page__content a {
   color: $primary-color;
   text-decoration: underline;
 }
-.page__content a:hover {
+.layout--single .page__content a:hover {
   color: darken($primary-color, 10%);
   text-decoration: none;
-}
-
-/* 記事ページ全体の背景 */
-.layout--single .page {
-  background-color: $background-color !important;
-}
-
-/* 記事本文を包むコンテナ */
-.layout--single .page__content {
-  background-color: lighten($background-color, 4%) !important;
-  padding: 1.5rem;
-  border-radius: 8px;
 }
 
 /* 引用ブロック */
