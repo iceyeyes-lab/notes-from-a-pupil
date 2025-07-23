@@ -7,7 +7,7 @@ $text-color: #333;          // 本文の文字色
 body {
   background-color: $background-color !important;
   color: $text-color !important;
-  font-family: 'Helvetica Neue', 'Hiragino Sans', 'Yu Gothic UI', 'Meiryo', sans-serif !important;
+  font-family: 'M PLUS Rounded 1c', 'Helvetica Neue', 'Arial', sans-serif !important;
   font-weight: 400;
   letter-spacing: 0.03em;
   font-size: 16px;
@@ -17,7 +17,7 @@ body {
 /* === 見出し === */
 h1, h2, h3, h4, h5, h6 {
   color: $primary-color !important;
-  font-family: 'Helvetica Neue', 'Hiragino Sans', 'Yu Gothic UI', 'Meiryo', sans-serif !important;
+  font-family: 'M PLUS Rounded 1c', 'Helvetica Neue', 'Arial', sans-serif !important;
   font-weight: 600;
   letter-spacing: 0.02em;
 }
