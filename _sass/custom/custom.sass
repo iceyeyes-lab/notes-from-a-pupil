@@ -1,44 +1,54 @@
-/* === カスタムカラー設定 === */
-$primary-color: #2c3e50;   // 濃いめの紺
-$background-color: #f8f9fa; // 背景を淡いグレー
-$text-color: #333;          // 本文の文字色
-
-/* サイト全体の背景 */
+/* 背景色と全体フォント */
 body {
-  background-color: $background-color;
-  color: $text-color;
+  background-color: #f8f9fb;
+  color: #333;
+  font-family: 'Helvetica Neue', 'Arial', sans-serif;
+  line-height: 1.7;
 }
 
-/* ヘッダー */
+/* 見出し */
+h1, h2, h3, h4, h5, h6 {
+  color: #2c3e66;
+  font-weight: 600;
+}
+
+/* リンク */
+a {
+  color: #4c6faf;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+a:hover {
+  color: #2c3e66;
+}
+
+/* ナビゲーションの背景 */
 .masthead {
-  background-color: $primary-color !important;
-  color: #fff !important;
+  background-color: #3a4f7a;
 }
-
-/* ナビゲーションリンク */
 .masthead a {
-  color: #ffffff !important;
-}
-.masthead a:hover {
-  color: #d1ecf1 !important;
-}
-
-/* 記事タイトル */
-.page__title,
-.entry-title {
-  color: $primary-color;
+  color: #fff !important;
 }
 
 /* フッター */
 .page__footer {
-  background-color: $primary-color !important;
-  color: #ffffff !important;
+  background: #3a4f7a;
+  color: #f0f0f0;
 }
 
-/* リンク全般 */
-a {
-  color: $primary-color;
+/* ボタン */
+.btn, .btn--primary {
+  background-color: #4c6faf;
+  border-color: #4c6faf;
+  color: #fff;
 }
-a:hover {
-  color: darken($primary-color, 10%);
+.btn:hover {
+  background-color: #3a4f7a;
+  border-color: #3a4f7a;
+}
+
+/* プロフィール画像丸く */
+.author__avatar img {
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
