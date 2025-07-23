@@ -43,6 +43,20 @@ body,
 .page__inner-wrap {
   background-color: #E0EAF9 !important;
 }
+/* 記事タイトル背景を変更 */
+.page__title,
+.entry-title,
+.page__meta,
+.archive__item-title {
+  background-color: transparent !important; /* 背景を透明化 */
+  color: $primary-color !important; /* タイトル文字色 */
+}
+
+/* 記事カードやアーカイブの背景 */
+.archive__item {
+  background-color: $background-color !important;
+  box-shadow: none !important; /* 白いボックス影を無効化 */
+}
 
 /* 記事本文 */
 .page__content p {
