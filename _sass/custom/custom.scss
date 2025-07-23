@@ -63,6 +63,18 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 
+/* 記事ページ全体の背景 */
+.layout--single .page {
+  background-color: $background-color !important;
+}
+
+/* 記事本文を包むコンテナ */
+.layout--single .page__content {
+  background-color: lighten($background-color, 4%) !important;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
 /* 引用ブロック */
 .page__content blockquote {
   border-left: 4px solid $primary-color;
