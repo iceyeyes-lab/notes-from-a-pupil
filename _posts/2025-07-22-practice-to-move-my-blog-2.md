@@ -6,8 +6,6 @@ tags: markdown, github, blog
 categories: ブログ作成作業
 ---
 
-# GitHubにブログを引っ越しさせるための練習②
-
 ## Notionで書いた記事をJekyllで編集する
 
 ここからはPCで作業する。
