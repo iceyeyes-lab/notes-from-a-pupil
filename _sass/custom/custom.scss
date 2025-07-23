@@ -10,22 +10,30 @@ body {
   line-height: 1.7;
 }
 
-/* ヘッダー */
-.masthead {
+/* === ヘッダー調整 === */
+.masthead,
+.masthead__inner-wrap,
+.greedy-nav {
   background-color: $primary-color !important;
   color: #fff !important;
 }
-.masthead a {
+
+.greedy-nav a,
+.greedy-nav .visible-links > li > a {
   color: #fff !important;
 }
-.masthead a:hover {
+
+.greedy-nav a:hover {
   color: lighten($primary-color, 30%) !important;
 }
 
-/* ページ全体の背景 */
-body {
-  background-color: #f8f9fb !important;
-  color: #333;
+/* === ページ背景を強制的に淡いブルーグレーに === */
+body,
+.page,
+.page__inner-wrap,
+.page__content {
+  background-color: $background-color !important;
+  color: $text-color !important;
 }
 
 /* 記事エリアやカードの背景 */
