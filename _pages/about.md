@@ -3,7 +3,7 @@ permalink: /about/
 title: "About"
 ---
 
-![About画像](assets/images/無題55_20250723210233.jpeg)
+![About画像]({{ site.baseurl }}assets/images/無題55_20250723210233.jpeg)
 管理人　あいずです。
 MBTI診断は毎回INFPと出ます。
 
