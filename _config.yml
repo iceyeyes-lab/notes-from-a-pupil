@@ -60,7 +60,7 @@ plugins:
 author:
   name   : "あいず"
   avatar : "assets/images/無題56_20250723214813.jpeg"
-  bio    : "学びや気づいたこと、日常などを綴るブログです。"
+  bio    : "学びや気づき、日常などを綴るブログです。"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
